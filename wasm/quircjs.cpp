@@ -51,7 +51,7 @@ extern "C" {
 			/* Decoding stage */
 			err = quirc_decode(&code, &data);
 			if (err) {
-				printf("DECODE FAILED: %s\n", quirc_strerror(err));
+				//printf("DECODE FAILED: %s\n", quirc_strerror(err));
 				EM_ASM_({
 					if (self.decode_error) {
 						decode_error(UTF8ToString($0));
