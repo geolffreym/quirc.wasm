@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<link rel="stylesheet" media="all" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="qrscan.js"></script>
+		<script src="video-qr-scanner.js"></script>
+	</head>
+	<body>
+		<div class="row">
+		  <div class="col-sm-8 col-md-6">
+			 <video id="video-preview" class="img-fluid" autoplay></video>
+		  </div>
+		  <div id="scan-log" class="col-sm-4 col-md-6">
+		  </div>
+		</div>
+
+		<script>
+		  $(function() {
+			 start_scanning("quirc_worker.js");
+		  });
+		</script>
+	</body>
+</html>
