@@ -9,10 +9,14 @@ var Module = {};
 // location.  For instance, if using the Rails asset
 // pipeline:
 //
-//Module['wasmBinary'] = fetch('<%= asset_path('quirc.wasm') %>').arrayBuffer;
-//importScripts('<%= asset_path('quirc.js') %>');
+// fetch('<%= asset_path('quirc.wasm') %>')
+//   .then(function(response) {
+//     return response.arrayBuffer();
+//   }).then(function(wasm_file) {
+//     Module['wasmBinary'] = wasm_file;
+//     importScripts('<%= asset_path('quirc.js') %>');
+//   });
 
-Module['wasmBinary'] = fetch('quirc.wasm').arrayBuffer;
 importScripts('quirc.js');
 
 self.onmessage = function(msg) {
