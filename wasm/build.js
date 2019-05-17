@@ -1,6 +1,8 @@
 /*
  * Simple script for running emcc on quirc
  * @author zz85 github.com/zz85
+ *
+ * See https://github.com/zz85/quirc.js
  */
 
 

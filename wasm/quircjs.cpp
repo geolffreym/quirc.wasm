@@ -1,3 +1,17 @@
+/*
+ * Pulled from :
+ * https://github.com/zz85/quirc.js
+ *
+ * @author zz85 github.com/zz85
+ *
+ * This is a simple wrapper to bring quirc
+ * https://github.com/dlbeer/quirc
+ * functionality to the browser via wasm.  zz85's fork had fallen
+ * behind the dlbeer original by many commits, and zz85's changes
+ * were minimal (but really cool) so I forked the original and
+ * added zz85's changes here.  There are other good forks with the
+ * appropriate configs for npm and such.
+ */
 extern "C" {
 	#include <emscripten.h>
 	#include <quirc.h>
